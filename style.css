@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+#ul-list{
+    list-style-type: none;
+}
+
+.main{
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-to-do-list-student-picture-image_1599884.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:1em 0.5em;
+}
+
+
+
+.head{
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: "Dancing Script", cursive;
+    font-weight:bolder !important;
+}
+
+.dis{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+#display{
+    border: none;
+    outline: none;
+    height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+    text-indent: 12px;
+    width: 300px;
+}
+
+.add{
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 7px;
+    background-color: rgb(255, 22, 146);
+    /* background-color: rgb(232, 109, 109); */
+    color: white;
+}
+
+.app-box{
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto;
+    background-image: url(https://img.freepik.com/free-photo/top-view-macarons-with-rose-copy-space_23-2148389700.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(190, 246, 255);
+}
+
+/*  */
+
+/* js-classes */
+
+.list-s{
+    background-color: white;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+    position: relative;
+    
+}
+
+
+.c-btn{
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 150px;
+    width: 70px;
+    padding: 8px 0;
+    border-radius: 7px;
+    background-color: rgba(232, 109, 109, 0.47);
+
+    
+}
+
+.e-btn{
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 130px;
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 7px;
+    background-color: rgb(232, 109, 109);
+    
+}
+
+.d-btn{
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(100, 86, 86);
+}
+
+
+
+
+/* medis queries */
+
+
+@media (max-width:750px){
+    #display{
+        width: 200px;
+    }
+  
+}
+
+@media (max-width:650px){
+    #display{
+        width: 140px;
+    }
+   .app-box{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:520px){
+  
+
+    .add{
+        width: auto;
+        padding: 7px 6px;
+    }
+
+    .e-btn{
+        width: auto;
+        padding: 7px 6px;
+        right: 55px;
+    }
+
+    .d-btn{
+        width: auto;
+        padding: 7px 6px;
+    }
+}
+
+@media (max-width:350px){
+    #display{
+        width: 120px;
+        text-indent: 1px;
+    }
+
+    .head{
+        color: rgb(255, 255, 255);
+        text-shadow: 4px 3px 5px black;
+    }
+
+    .dis{
+        justify-content: space-between;
+    }  
+    
+    .add{
+       font-size: 10px;
+    }
+    .e-btn{
+        font-size: 10px;
+        right: 40px;
+    }
+
+    .d-btn{
+        font-size: 10px;
+    }
+}
